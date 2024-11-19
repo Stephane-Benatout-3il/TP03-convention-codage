@@ -58,9 +58,9 @@ public class Chien extends Animal {
 }
 
 /**
- * réation de la classe Chien qui hérite d'Animal
+ * réation de la classe Chat qui hérite d'Animal
 */
-public class Chien extends Animal {
+public class Chat extends Animal {
 	private String type;
 	/**
 	 * création de l'objet Chien
@@ -69,7 +69,7 @@ public class Chien extends Animal {
 	 * @param age age de l'animal
 	 * @param type type de l'animal ici un chat
 	*/
-	public Chien(String nom, int age){
+	public Chat(String nom, int age){
 		super(nom, age);
 		this.type = "Chat";
 	}
