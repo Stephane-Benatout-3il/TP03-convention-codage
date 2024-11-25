@@ -72,15 +72,22 @@ public class Chien extends Animal {
     /**
      * procédure d'aboiment
     */
-     public void parler() {
+    public void parler() {
         System.out.println("Woof Woof");
+     }
+
+     /**
+      * procédure pour manger
+      */
+     public void manger(){
+        System.out.println(nom+" Prend de la nourriture pour chien.")
      }
 }
 
 /**
- * réation de la classe Chien qui hérite d'Animal
+ * réation de la classe Chat qui hérite d'Animal
 */
-public class Chien extends Animal {
+public class Chat extends Animal {
     private String type;
     /**
      * création de l'objet Chien
@@ -89,7 +96,7 @@ public class Chien extends Animal {
      * @param age age de l'animal
      * @param type type de l'animal ici un chat
     */
-    public Chien(String nom, int age){
+    public Chat(String nom, int age){
         super(nom, age);
         this.type = "Chat";
     }
@@ -99,5 +106,44 @@ public class Chien extends Animal {
     */
      public void parler() {
         System.out.println("Miaou");
+     }
+
+    /**
+    * procédure pour manger
+    */
+     public void manger(){
+        System.out.println(nom+" Prend de la nourriture pour chat.")
+     }
+}
+
+/**
+ * réation de la classe Oiseau qui hérite d'Animal
+*/
+public class Oiseau extends Animal {
+    private String type;
+    /**
+     * création de l'objet Chien
+     * 
+     * @param nom nom de l'animal
+     * @param age age de l'animal
+     * @param type type de l'animal ici un chat
+    */
+    public Oiseau(String nom, int age){
+        super(nom, age);
+        this.type = "Oiseau";
+    }
+
+    /**
+     * procédure de miaulement
+    */
+     public void parler() {
+        System.out.println("Piou piou");
+     }
+
+     /**
+    * procédure pour manger
+    */
+     public void manger(){
+        System.out.println(nom+" Prend des graine.")
      }
 }
